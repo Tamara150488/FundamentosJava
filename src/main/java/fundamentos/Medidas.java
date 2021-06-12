@@ -9,7 +9,6 @@ public class Medidas {
     // 3.1 - Atributos
     static Scanner entrada = new Scanner(System.in);
 
-
     // 3.2 - Métodos e Funções
     public static void main(String[] args){
         String opcao;
