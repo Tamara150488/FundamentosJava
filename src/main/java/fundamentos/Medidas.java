@@ -12,7 +12,7 @@ public class Medidas {
     // 3.2 - Métodos e Funções
     public static void main(String[] args){
         String opcao;
-        int area = 0; // receber o resultado dos calculos de áreas
+        int area = 0; // receber o resultado dos cálculos de áreas
 
         System.out.println("Escolha o Calculo Desejado");
         System.out.println("(1) - Area do Quadrado");
@@ -20,22 +20,21 @@ public class Medidas {
         System.out.println("(3) - Area do Triangulo");
         System.out.println("(4) - Area do Circulo");
 
-        opcao = entrada.nextLine(); // Leitura da opção
-        switch (opcao){
+        opcao = entrada.nextLine(); // leitura da opção
+        switch(opcao){
             case "1":
                 area = calcularAreaDoQuadrado();
                 break;
             case "2":
-                // ToDo: calcular área do retângulo
+                // ToDo: calcular área do retangulo
                 break;
             default:
-                System.out.println("Opção Inválido: " + opcao);
+                System.out.println("Opcao Invalida: " + opcao);
         }
         if (area > 0) {
-        System.out.println("A área é de " + area + "m²");}
-
+        System.out.println("A área é de " + area + "m²");
+        }
     }
-
 
     public static int calcularAreaDoQuadrado(){
 
@@ -45,7 +44,5 @@ public class Medidas {
         lado = entrada.nextInt(); // leitura do tamanho do lado
         return lado * lado; // retorna a área do quadrado
     }
-
-
 
 }
